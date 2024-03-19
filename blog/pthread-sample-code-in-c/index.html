@@ -3,7 +3,7 @@
 
 <head>
   <title>
-  1_first_testing_post · 緜阳绵羊
+  Pthread Sample Code in C · 緜阳绵羊
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +18,11 @@
 <meta name="keywords" content="blog,personal">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="1_first_testing_post"/>
+<meta name="twitter:title" content="Pthread Sample Code in C"/>
 <meta name="twitter:description" content="pthread C sample code:
 #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;unistd.h&gt; #include &lt;pthread.h&gt; #include &lt;string.h&gt; #include &lt;stdbool.h&gt; #define RAND_DELAY true #define DETACH_TH true #define THREAD_NUM 300 struct msg { int id; char msg[32]; int *count; pthread_mutex_t *mutex; }; void *counter_func(void *msg_ptr); int main(int argc, char argv[]) { pthread_mutex_t mutex_cnt = PTHREAD_MUTEX_INITIALIZER; pthread_t threads[THREAD_NUM]; struct msg msgs[THREAD_NUM]; int irets[THREAD_NUM]; int count = 0; #if RAND_DELAY srand(time(NULL)); #endif for (int i = 0; i &lt; THREAD_NUM; i&#43;&#43;) { sprintf((char *)msgs[i]."/>
 
-<meta property="og:title" content="1_first_testing_post" />
+<meta property="og:title" content="Pthread Sample Code in C" />
 <meta property="og:description" content="pthread C sample code:
 #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;unistd.h&gt; #include &lt;pthread.h&gt; #include &lt;string.h&gt; #include &lt;stdbool.h&gt; #define RAND_DELAY true #define DETACH_TH true #define THREAD_NUM 300 struct msg { int id; char msg[32]; int *count; pthread_mutex_t *mutex; }; void *counter_func(void *msg_ptr); int main(int argc, char argv[]) { pthread_mutex_t mutex_cnt = PTHREAD_MUTEX_INITIALIZER; pthread_t threads[THREAD_NUM]; struct msg msgs[THREAD_NUM]; int irets[THREAD_NUM]; int count = 0; #if RAND_DELAY srand(time(NULL)); #endif for (int i = 0; i &lt; THREAD_NUM; i&#43;&#43;) { sprintf((char *)msgs[i]." />
 <meta property="og:type" content="article" />
@@ -136,7 +136,7 @@
     <header>
       <h1 class="title">
         <a class="title-link" href="https://mysheepy.github.io/blog/pthread-sample-code-in-c/">
-          1_first_testing_post
+          Pthread Sample Code in C
         </a>
       </h1>
     </header>
